@@ -1,9 +1,11 @@
 :root {
-  --fuentaHeading: "PT Sans", sans-serif;
+  --fuenteHeading: "PT Sans", sans-serif;
   --fuenteParrafos: "Open Sans", sans-serif;
   --primario: #784d3c;
+  --gris:#e1e1e1;
   --blanco: #ffffff;
   --negro: #000000;
+
 }
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -38,7 +40,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: var(--fuentaHeading);
+  font-family: var(--fuenteHeading);
 }
 
 h1 {
@@ -130,10 +132,36 @@ img {
     column-gap: 4rem;
 
   }
-  /* .blog{
-    grid-column: 1/2;
+}
+
+.entrada{
+  border-bottom: 1px solid var(--gris);
+  margin-bottom: 2rem;
+}
+
+.entrada:last-of-type{
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.boton{
+  display: block;
+  font-family: var(--fuenteHeading);
+  color: var(--blanco);
+  text-align: center;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+@media(min-width:768px){
+  .boton{
+    display: inline-block;
   }
-  .sidebar{
-    grid-column: 2/3
-  } */
+}
+
+.boton--primario{
+  background-color: var(--negro);
 }
