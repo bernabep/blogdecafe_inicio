@@ -85,10 +85,9 @@ img {
 }
 
 @media (min-width: 768px) {
-  .header__texto{
+  .header__texto {
     margin-top: 15rem;
   }
-    
 }
 
 @media (min-width: 768px) {
@@ -96,10 +95,6 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .navegacion {
-    /* flex-direction: row; */
   }
 }
 
@@ -128,3 +123,17 @@ img {
   color: var(--blanco);
 }
 
+@media (min-width: 768px) {
+  .contenido-principal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+
+  }
+  /* .blog{
+    grid-column: 1/2;
+  }
+  .sidebar{
+    grid-column: 2/3
+  } */
+}
